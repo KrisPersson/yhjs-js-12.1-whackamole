@@ -49,3 +49,125 @@ main article.mole {
     background-size: contain;
     background-position: center bottom;
 }
+
+.highscore-board {
+    position: absolute;
+    left: 2rem;
+    top: 3rem;
+    /* min-width: 20rem; */
+
+    border: 2px solid black;;
+}
+
+.highscore-board > h2 {
+    margin: 0.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.highscore-board > table {
+    min-width: 13rem;
+
+}
+
+.highscore-board > table > thead > tr > th {
+    text-align: left;
+}
+
+.start-screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0 0 0 / 0.9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-screen__board {
+    min-width: 320px;
+    width: 80%;
+    max-width: 40rem;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(196, 196, 196);
+    position: relative;
+
+
+}
+
+.start-screen button, .start-screen input {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.4rem 1rem;
+    outline: none;
+    border: none;
+}
+
+.start-screen button {
+    background: rgb(30 30 30);
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+    border-left: 2px solid grey;
+}
+
+.start-screen button:hover {
+    color: white;
+}
+.start-screen button:active {
+    color: rgb(202, 202, 202);
+}
+
+.start-screen input {
+    border-radius: 50px 0 0 50px;
+
+}
+
+.end-screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0 0 0 / 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-screen button {
+    font-family: 'PT Sans', sans-serif;
+    background: rgb(30 30 30);
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.4rem 1rem;
+    outline: none;
+    border: none;
+    margin: 1rem;
+    border-radius: 15px;
+}
+.end-screen button:hover {
+    color: white;
+}
+.end-screen button:active {
+    color: rgb(202, 202, 202);
+}
+
+.time-input {
+    border-radius:  0 !important;
+    border-left: 2px solid grey !important;
+}
+
+.board__text {
+    position: absolute;
+    top: 3rem;
+
+    font-size: 1.5rem;
+}
+
